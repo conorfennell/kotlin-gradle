@@ -1,9 +1,9 @@
 plugins {
     kotlin("jvm") version "1.5.20"
+    java
 }
 
-group = "org.example"
-version = "1.0-SNAPSHOT"
+group = "com.idiomcentric"
 
 repositories {
     mavenCentral()
