@@ -13,6 +13,7 @@ dependencies {
     implementation(kotlin("stdlib"))
 }
 
+apply<com.idiomcentric.HelloWorldPlugin>()
 
 interface GreetingPluginExtension {
     val message: Property<String>
@@ -30,7 +31,6 @@ class GreetingPlugin : Plugin<Project> {
         }
     }
 }
-
 
 apply<GreetingPlugin>()
 
