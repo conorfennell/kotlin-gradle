@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.5.20"
+    kotlin("jvm") apply true
     java
 }
 
@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    api(project(":example-project"))
     implementation(kotlin("stdlib"))
 }
 
